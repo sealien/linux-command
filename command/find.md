@@ -35,7 +35,7 @@ find(选项)(参数)
 -fstype<文件系统类型>：只寻找该文件系统类型下的文件或目录；
 -gid<群组识别码>：查找符合指定之群组识别码的文件或目录；
 -group<群组名称>：查找符合指定之群组名称的文件或目录；
--help或——help：在线帮助；
+-help或--help：在线帮助；
 -ilname<范本样式>：此参数的效果和指定“-lname”参数类似，但忽略字符大小写的差别；
 -iname<范本样式>：此参数的效果和指定“-name”参数类似，但忽略字符大小写的差别；
 -inum<inode编号>：查找符合指定的inode编号的文件或目录；
@@ -300,7 +300,7 @@ find $HOME/. -name "*.txt" -ok rm {} \;
 查找当前目录下所有.txt文件并把他们拼接起来写入到all.txt文件中
 
 ```shell
-find . -type f -name "*.txt" -exec cat {} \;> all.txt
+find . -type f -name "*.txt" -exec cat {} \;> /all.txt
 ```
 
 将30天前的.log文件移动到old目录中
